@@ -9,7 +9,7 @@
         </v-list-item-content>
       </v-list-item>
       <v-list>
-        <v-list-item to="/new">
+        <v-list-item :to="{ name: 'addNew' }">
           <v-list-item-icon>
             <v-icon>mdi-plus</v-icon>
           </v-list-item-icon>
@@ -67,9 +67,7 @@
     <v-app-bar app color="white"></v-app-bar>
 
     <v-main>
-      <v-container>
-        <router-view></router-view>
-      </v-container>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
