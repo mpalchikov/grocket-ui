@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import Home from "./views/Home.vue";
 import AddNew from "./views/AddNew.vue";
 import Configuration from "./views/Configuration.vue";
+import AddNode from "./views/AddNode.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     name: "configuration",
     path: "/configuration",
     component: Configuration,
+  },
+  {
+    name: "addNode",
+    path: "/add-node",
+    component: AddNode,
   },
 ];
 
